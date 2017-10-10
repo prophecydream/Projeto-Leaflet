@@ -1,0 +1,10 @@
+
+#descgustavo {
+    position: absolute;
+    border-radius: 25px;
+    border: 2px solid #ff0000;
+    background-color:rgb(151, 174, 217);   
+    width: 100;
+    height: 100;
+    right: 40%;
+}

@@ -1,0 +1,216 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+	 <style type="text/css">
+	 	#mapid{
+	 		height:480;
+			border-radius: 15px 50px;
+			background-position: center;
+			background-repeat: repeat;
+			padding: 0px; 
+	 	}
+	 </style>
+</head>
+<body>
+	<div id="mapid"></div>
+	<script type="text/javascript">
+		var map = L.map("mapid").setView([-22.864539, -47.211979], 16.5);
+
+		var pokestop = L.icon({
+		    iconSize:     [38, 95], // size of the icon
+		    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+		    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+		});
+
+
+		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+		}).addTo(map);
+
+		L.marker([-22.851364, -47.231302],  ).bindPopup("IFSP").addTo(map);
+
+		L.marker([-22.853935, -47.220273],  ).bindPopup("E.E. Professora Maria Rita Araújo Costa").addTo(map);		
+
+		L.marker([-22.857141, -47.223288],  ).bindPopup("Colégio Magalhães e Azevedo").addTo(map);				
+
+		L.marker([-22.856765, -47.221228],  ).bindPopup("Escola Tecnica Liderança").addTo(map);	
+
+		L.marker([-22.853079, -47.217327],  ).bindPopup("EMEF. Professora Janilde Flores Gaby do Vale").addTo(map);	
+
+		L.marker([-22.853593, -47.216812],  ).bindPopup("Professora Liomar Freitas Câmara").addTo(map);	
+
+		L.marker([-22.848689, -47.205199],  ).bindPopup("E.E. Antônio Zanluchi").addTo(map);	
+
+		L.marker([-22.863934, -47.217677],  ).bindPopup("E.E. Manoel Ignacio da Silva").addTo(map);	
+
+		L.marker([-22.863326, -47.216470],  ).bindPopup("Inovação Colégio Objetivo").addTo(map);	
+
+		L.marker([-22.858072, -47.206779],  ).bindPopup("Profa. Raquel Saes Melhado da Silva").addTo(map);	
+
+		L.marker([-22.850503, -47.207799],  ).bindPopup("E.M.E.F Caio Fernando Gomes Pereira").addTo(map);	
+
+		L.marker([-22.853618, -47.200975],  ).bindPopup("E.M.E.F. Jardim Boa Esperança").addTo(map);	
+
+		L.marker([-22.852019, -47.196788],  ).bindPopup("E.M.E.F. Jardim Primavera").addTo(map);	
+
+		L.marker([-22.855049, -47.201477],  ).bindPopup("E.M.E.I. Jose Natalino Fonseca").addTo(map);	
+
+		L.marker([-22.875676, -47.223441],  ).bindPopup("Colégio Adventista de Hortolândia").addTo(map);	
+
+		L.marker([-22.876595, -47.228366],  ).bindPopup("Adventista IASP").addTo(map);	
+
+		L.marker([-22.902212, -47.234717],  ).bindPopup("Colégio Alternativo Hortolândia").addTo(map);	
+
+		L.marker([-22.893746, -47.231434],  ).bindPopup("Ana Jose Bodini Januario Dona EMEF").addTo(map);
+
+		L.marker([-22.892699, -47.165441],  ).bindPopup("Escola Municipal Armelinda Espúrio da Silva").addTo(map);	
+		
+		L.marker([-22.879614, -47.257135],  ).bindPopup("EMEI Taquara Branca").addTo(map);	
+
+		L.marker([-22.902719, -47.197266],  ).bindPopup("E.M.E.I. Bairro Três Casas").addTo(map);	
+
+		L.marker([-22.850681, -47.207987],  ).bindPopup("E. M. E. F. Caio F. Gomes Pereira").addTo(map);	
+
+		L.marker([-22.866515, -47.211745],  ).bindPopup("Colégio Caramelo").addTo(map);	
+		
+		L.marker([-22.878549, -47.202896],  ).bindPopup("E.E. Prof.ª Hedy Madalena Bocchi").addTo(map);	
+
+		L.marker([-22.853897, -47.216579],  ).bindPopup("E.E. LIOMAR FREITAS CAMARA PROFA ").addTo(map);	
+
+		L.marker([-22.899751, -47.227817],  ).bindPopup("E.M. Chácara Acarai").addTo(map);	
+
+		L.marker([-22.868754, -47.204611],  ).bindPopup("E.M. Parque dos Pinheiros").addTo(map);	
+		
+		L.marker([-22.900941, -47.174177],  ).bindPopup("Colégio Clemente Pavan").addTo(map);	
+
+		L.marker([-22.900447, -47.174378],  ).bindPopup("Anglo Hortolândia").addTo(map);	
+
+		L.marker([-22.900101, -47.228674],  ).bindPopup("Colégio 1° Mundo").addTo(map);	
+
+		L.marker([-22.898332, -47.242129],  ).bindPopup("E.E. Conceição Aparecida Terza Gomes Cardinales").addTo(map);	
+		
+		L.marker([-22.871823, -47.206787],  ).bindPopup("Cristiane Chaves Moreira Braga Profa").addTo(map);	
+
+		L.marker([-22.900744, -47.235147],  ).bindPopup("E.E. Eliseo Marson").addTo(map);	
+
+		L.marker([-22.891285, -47.178657],  ).bindPopup("EMEI Olinda Maria de Jesus Souza").addTo(map);	
+
+		L.marker([-22.841098, -47.218037],  ).bindPopup("EMEIEF Luiza Vitória Oliveira Cruz").addTo(map);	
+		
+		L.marker([-22.891083, -47.203186],  ).bindPopup("E.M. Iliano Sanchez").addTo(map);	
+
+		L.marker([-22.886809, -47.222645],  ).bindPopup("ESATEC Educacional").addTo(map);	
+
+		L.marker([-22.872061, -47.210468],  ).bindPopup("ETEC Hortolândia").addTo(map);	
+
+		L.marker([-22.198866, -47.905369],  ).bindPopup("Etep Faculdades").addTo(map);	
+
+		L.marker([-22.905685, -47.247367],  ).bindPopup("E. E. Prof. Euzebio Antônio Rodrigues").addTo(map);	
+
+		L.marker([-22.893248, -47.175431],  ).bindPopup("Gaber Empreendimentos Educacionais").addTo(map);	
+
+		L.marker([-22.887626, -47.204743],  ).bindPopup("E.M.E.F. Helena Futava Takahashi Profa").addTo(map);	
+
+		L.marker([-22.891733, -47.179552],  ).bindPopup("E.E.Dr Honorino Fabbri").addTo(map);	
+
+		L.marker([-22.906458, -47.177152],  ).bindPopup("E.M.E.I. Jardim Adelaide").addTo(map);	
+
+		L.marker([-22.861958, -47.161898],  ).bindPopup("E.E. Jardim Aline").addTo(map);	
+
+		L.marker([-22.898547, -47.237756],  ).bindPopup("EMEF Jardim Amanda I").addTo(map);	
+
+		L.marker([-22.899605, -47.243481],  ).bindPopup("E.M.E.I Jardim Amanda II").addTo(map);	
+
+		L.marker([-22.890772, -47.236524],  ).bindPopup("E.M.E.I Jardim Amanda III").addTo(map);	
+
+		L.marker([-22.853807, -47.200426],  ).bindPopup("E.M.E.F. Jardim Boa Esperança").addTo(map);	
+
+		L.marker([-22.858124, -47.206693],  ).bindPopup("E.M.E.I. Jardim Nossa Senhora Auxiliadora").addTo(map);	
+
+		L.marker([-22.900681, -47.171686],  ).bindPopup("E.M. Jardim Nossa Senhora de Fátima").addTo(map);	
+
+		L.marker([-22.859831, -47.177557],  ).bindPopup("E.M.E.F Jardim Nova Europa").addTo(map);	
+
+		L.marker([-22.876789, -47.203418],  ).bindPopup("E.M. Jardim Santa Amélia").addTo(map);	
+
+		L.marker([-22.885450, -47.198664],  ).bindPopup("E.E Jardim Santa Clara do Lago").addTo(map);	
+
+		L.marker([-22.889669, -47.176085],  ).bindPopup("E.M.E.I. Jardim Santa Emilia").addTo(map);	
+
+		L.marker([-22.906577, -47.192297],  ).bindPopup("E.M. Jardim Santa Esmeralda").addTo(map);	
+
+		L.marker([-22.904624, -47.210814],  ).bindPopup("E.M. Jardim São Pedro").addTo(map);	
+
+		L.marker([-22.888267, -47.165249],  ).bindPopup("EMEF João Calixto da Silva").addTo(map);	
+
+		L.marker([-22.855924, -47.210894],  ).bindPopup("EMEIEF João Carlos do Amaral Soares").addTo(map);	
+
+		L.marker([-22.890182, -47.219813],  ).bindPopup("Escola Estadual Jonatas Davi Visel dos Santos").addTo(map);	
+
+		L.marker([-22.896964, -47.196670],  ).bindPopup("E.E. Parque Odimar").addTo(map);	
+
+		L.marker([-22.882493, -47.146016],  ).bindPopup("E.M.E.I. Jardim Novo Angulo").addTo(map);	
+
+		L.marker([-22.903204, -47.177627],  ).bindPopup("Lilian Cristiane Martins de Araujo Profa Emef").addTo(map);	
+
+		L.marker([-22.853917, -47.216665],  ).bindPopup("Professora Liomar Freitas Câmara").addTo(map);	
+
+		L.marker([-22.883213, -47.175820],  ).bindPopup("E.E. Maria Antonietta Garnero La Fortezza").addTo(map);	
+
+		L.marker([-22.903395, -47.249251],  ).bindPopup("E.M.E.F. Maria Celia Cabral Amaral Profa").addTo(map);	
+
+		L.marker([-22.867733, -47.177747],  ).bindPopup("Escola estadual professora Maria Cristina de Souza Lobo").addTo(map);	
+
+		L.marker([-22.866003, -47.208121],  ).bindPopup("E.M. Marleciene Priscila Presta Bonfim").addTo(map);	
+
+		L.marker([-22.890943, -47.178248],  ).bindPopup("EMEF nicolas tiago dos santos lofrani").addTo(map);	
+
+		L.marker([-22.903276, -47.236060],  ).bindPopup("Patotinha Feliz Escola de Educacao Infantil").addTo(map);	
+
+		L.marker([-22.890938, -47.220290],  ).bindPopup("E.M. Patricia Maria Capellato Basso").addTo(map);	
+
+		L.marker([-22.878224, -47.194859],  ).bindPopup("Paulina Rosa Profa").addTo(map);	
+
+		L.marker([-22.905582, -47.210616],  ).bindPopup("E.E. Paulo Camilo De Camargo Secretaria de Estado da Educação").addTo(map);	
+
+		L.marker([-22.890596, -47.222344],  ).bindPopup("Colégio Pectrus").addTo(map);	
+
+		L.marker([-22.888420, -47.236945],  ).bindPopup("Priscila Fernades da Rocha").addTo(map);	
+
+		L.marker([-22.841025, -47.225088],  ).bindPopup("E.E. Recreio Alvorada").addTo(map);	
+
+		L.marker([-22.886965, -47.232195],  ).bindPopup("Escola Infantil Reino da Alegria").addTo(map);	
+
+		L.marker([-22.887732, -47.236022],  ).bindPopup("E.M. Renato da Costa Lima").addTo(map);	
+
+		L.marker([-22.890487, -47.221547],  ).bindPopup("EMEI Residencial São Sebastião").addTo(map);	
+
+		L.marker([-22.895698, -47.167540],  ).bindPopup("E.E. Roberto Rodrigues de Azevedo Pastor").addTo(map);	
+
+		L.marker([-22.864010, -47.199499],  ).bindPopup("").addTo(map);	
+
+		L.marker([-22.880267, -47.172553],  ).bindPopup("E.M.E.F Salvador Zacharias Pereira Junior").addTo(map);	
+
+		L.marker([-22.867277, -47.219127],  ).bindPopup("Serviço Social da Indústria-SESI").addTo(map);	
+
+		L.marker([-22.892035, -47.234871],  ).bindPopup("Escola de Educação Infantil Tim do Le Letra ").addTo(map);	
+
+		L.marker([-22.869159, -47.206849],  ).bindPopup("Trilha Das Letras Bercario E Educacao Infantil").addTo(map);	
+
+		L.marker([-22.855240, -47.219199],  ).bindPopup("E.M. Vila Real").addTo(map);	
+
+		L.marker([-22.886854, -47.202500],  ).bindPopup("Escola Municipal de Ensino Fundamental Villagio Ghiraldelli").addTo(map);	
+
+		L.marker([-22.892529, -47.197827],  ).bindPopup("Jardim Santa Clara do Lago II").addTo(map);	
+
+		L.marker([-22.906412, -47.192023],  ).bindPopup("Yasuo Sasaki").addTo(map);	
+
+		L.marker([-22.866675, -47.214616],  ).bindPopup("E.M.E.I. Professora Zenaide").addTo(map);	
+
+		L.marker([-22.911208, -47.208628],  ).bindPopup("E.M.E.F. Zilda Arns Neumann").addTo(map);	
+
+	</script>
+</body> 
+</html>
